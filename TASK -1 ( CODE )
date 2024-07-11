@@ -1,3 +1,5 @@
+/ * Everything will be in the video presentation , download the video and verify the video * / 
+
 read -p "Enter username : " user
 read -sp "Enter password : " password
 echo
