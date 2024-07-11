@@ -10,6 +10,11 @@ Mentor : N. Santhosh kumar
 
 Overview of the project
 
+
+/ * Everything will be in the video presentation , download the video and verify the video * / 
+
+
+
 CrackLib is a password strength checking library designed to prevent users from creating weak or easily guessable passwords. It compares user-created passwords against a database of common passwords, dictionary words, and various patterns to ensure they meet certain security criteria. Here's an overview:
 
 Key Features:
