@@ -1,0 +1,16 @@
+read -p "Enter username : " user
+read -sp "Enter password : " password
+echo
+echo "Tesing password strength..."
+echo
+result="$(cracklib-check <<<"$password")"
+okay="$(awk -F': ' '{ print $2}' <<<"$result")"
+if [[ "$okay" == "OK" ]]
+then
+	echo "Adding a user account please wait..."
+	/sbin/useradd -m -s /bin/bash $user
+	echo "$user:$password" | /sbin/chpasswd
+else
+	echo "Your password was rejected - $result"
+        echo "Try again."
+fi
